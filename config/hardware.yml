@@ -12,6 +12,6 @@
 # mega => Arduino Mega
 
 --- 
-serial_port: atmega328
+serial_port: /dev/tty.usbserial*
 physical_reset: false
 mcu: atmega328
