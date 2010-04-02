@@ -14,4 +14,4 @@
 --- 
 serial_port: atmega328
 physical_reset: false
-mcu: atmega168
+mcu: atmega328
