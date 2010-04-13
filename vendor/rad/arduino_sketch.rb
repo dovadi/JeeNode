@@ -449,6 +449,7 @@ class ArduinoSketch
     
     declarations << "#include <WProgram.h>\n"
     declarations << "#include <SoftwareSerial.h>\n"
+    declarations << "extern \"C\" void __cxa_pure_virtual() {};"
     $load_libraries.each { |lib| declarations << "#include <#{lib}.h>" } unless $load_libraries.nil?
     $defines.each { |d| declarations << d }
 

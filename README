@@ -10,11 +10,10 @@ Experiment with serial
   cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
   core.a(Print.o):(.data+0x6): undefined reference to `__cxa_pure_virtual'
 
-
   See http://note19.com/2009/07/02/arduino-development-with-command-line-tools/
 
-  Added to avoid error::
+  Added declaration in  compose_setup method of ArduinoSketch to avoid error:
 
-    extern "C" void __cxa_pure_virtual() {};
+  "extern \"C\" void __cxa_pure_virtual() {};"
 
-  to /Applications/Arduino.app/Contents/Resources/Java/libraries/SoftwareSerial/SoftwareSerial.h
+
